@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: myapp-ingress
+  namespace: argocd-test
+  annotations:
+    traefik.ingress.kubernetes.io/router.entrypoints: web
+spec:
+  rules:
+  - host: myapp.com
+    http:
+      paths:
+      - path: /process
+        pathType: Prefix
+        backend:
+          service:
+            name: go-argocd-test
+            port:
+              number: 4000
