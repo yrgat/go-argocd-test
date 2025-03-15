@@ -9,5 +9,5 @@ spec:
   ports:
     - protocol: TCP
       port: 80    # Servisin expose edeceği port
-      targetPort: 8080  # Container içindeki port (Deployment'ta hangi port açıldıysa)
+      targetPort: 4000  # Container içindeki port (Deployment'ta hangi port açıldıysa)
   type: ClusterIP

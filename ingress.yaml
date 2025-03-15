@@ -16,4 +16,4 @@ spec:
           service:
             name: go-argocd-test
             port:
-              number: 4000
+              number: 80
