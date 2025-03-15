@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: go-hello-world
-          image: <YOUR_DOCKER_USERNAME>/go-hello-world:latest
+          image: yrgat/go-argocd-test:latest
           ports:
-            - containerPort: 8080
+            - containerPort: 4000
